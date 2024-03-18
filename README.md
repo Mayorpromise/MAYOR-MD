@@ -37,7 +37,7 @@
 ---
 1. ***Get [`SESSION ID`](https://blade-pair-qr-6.onrender.com/qr)  by scanning QR code. `Whatapp>Three dots>Linked Devices`***
 ##
-2. ***Get .[`PARING CODE`](https://blade-pair-qr.onrender.com/pair)
+2. ***Get .[`PARING CODE`](https://blade-pair-qr-6.onrender.com/pair)
    
 # ```EXTERNAL STUFF AND API```
 
