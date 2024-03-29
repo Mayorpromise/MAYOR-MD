@@ -139,7 +139,7 @@ cmd({
 *🍁 Repo:* https://github.com/Bladeh4x/BLADE-MD
 *Group:* https://chat.whatsapp.com/DLniUfYVWR50sbkZDR8tBI
 *public grp:* https://chat.whatsapp.com/HTTzf69NNqWEU2v2yc7r0E
-*scan Qr:* https://blade-md-qr.onrender.com/
+*scan Qr:* https://secret-plateau-39898-43273a7c97e1.herokuapp.com/
 *youtube tt:* https://youtu.be/YLG9OYERa5I?si=1e5cbrtKVc8aL5BI
 *Deploy Your Own:*-
 https://dashboard.heroku.com/new?button-url=https%3A%2F%2Fgithub.com%2FBladeh4x%2FBLADE-MD&template=https%3A%2F%2Fgithub.com%2FBladeh4x%2FBLADE-MD`
