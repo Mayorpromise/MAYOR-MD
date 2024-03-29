@@ -35,9 +35,7 @@
 
 ## Deployment Methods
 ---
-1. ***Get [`SESSION ID`](https://web-qr-segb.onrender.com/)  by scanning QR code. `Whatapp>Three dots>Linked Devices`***
-##
-2. ***Get .[`PARING CODE`](https://blade-pair-qr-6.onrender.com/pair)
+1. ***Get [`SESSION ID`](https://secret-plateau-39898-43273a7c97e1.herokuapp.com//)  by scanning QR code. `Whatapp>Three dots>Linked Devices`***
    
 # ```EXTERNAL STUFF AND API```
 
