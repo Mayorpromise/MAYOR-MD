@@ -6,7 +6,7 @@
   "success_url": "/",
   "stack": "container",
 "env": {
-  "BOT_NAME": {
+  "OWNER_NAME": {
   "description": "DONT CHANGE THIS", 
       "value": "BLADEMD"
   },
