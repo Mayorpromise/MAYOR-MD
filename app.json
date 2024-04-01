@@ -8,7 +8,7 @@
 "env": {
   "BOT_NAME": {
   "description": "DONT CHANGE THIS", 
-      "value": "blade-md"
+      "value": "BLADEMD"
   },
   "ALIVE_MESSAGE": {
     "description": " SET YOUR ALIVE MESSAGE FOR THE BOT",
