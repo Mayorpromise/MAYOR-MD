@@ -21,9 +21,9 @@ const quizQuestions = [
     },
 
     {
-        question: "WHO IS THE OWNER OF STAR-MD?",
-        options: ["A. EXCEl", "B. Hexce", "C. Cexcel"],
-        correctAnswer: "A"
+        question: "WHO IS THE OWNER OF BLADE-MD?",
+        options: ["A. bladeh4x", "B. Alextv", "C. mike"],
+        correctAnswer: "B"
     },
 
     {
@@ -33,15 +33,15 @@ const quizQuestions = [
     },
     
     {
-        question: "What's The best Anime/Manga",
-        options: ["A. DRAGON Ball", "B. Naruto", "C. JJK"],
+        question: "who has the most Ballon d'Or",
+        options: ["A. MESSI", "B. ROLANDO", "C. NEYMAR"],
         correctAnswer: "A"
     },
 
     {
-        question: "Group of Cell 🔬",
-        options: ["A.Tissue", "B. Cells", "C. Organ"],
-        correctAnswer: "A"
+        question: "who has the most subscribers on Youtube",
+        options: ["A.speed", "B. mr beast", "C. t series"],
+        correctAnswer: "B"
     },
 
     {
