@@ -23,6 +23,11 @@
     "required" :false,
     "value": "false"
       },
+  "AUTO_BIO": {
+    "description": "Fill the value true if you want to turn on auto bio.",
+    "required" :false,
+    "value": "false"
+      },
     "HEROKU_API_KEY": {
     "description": "Put HEROKU API KEY",
      "required" :true
