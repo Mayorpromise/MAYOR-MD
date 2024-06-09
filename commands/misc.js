@@ -50,7 +50,7 @@ const { Sticker, createSticker, StickerTypes } = require("wa-sticker-formatter")
     pattern: "welcome",
     alias:["setwelcome"],
     desc: "sets welcome message in specific group.",
-    category: "misc",
+    category: "group",
  filename: __filename
 },
 async(Void, citel, text,{ isCreator }) => {
@@ -89,7 +89,7 @@ cmd({
     pattern: "goodbye",
     alias: ["setgoodbye","setbye"],
     desc: "sets goodbye message in specific group.",
-    category: "misc",
+    category: "group",
  filename: __filename
 },
 async(Void, citel, text,{ isCreator }) => {
@@ -126,7 +126,7 @@ async(Void, citel, text,{ isCreator }) => {
              pattern: "vv",
              alias : ['viewonce','retrive'],
              desc: "Flips given text.",
-             category: "misc",
+             category: "tools",
              use: '<query>',
              filename: __filename
          },
@@ -208,8 +208,8 @@ else return citel.reply("```This is Not A ViewOnce Message```")
      //---------------------------------------------------------------------------
  cmd({
              pattern: "location",
-             desc: "Adds *readmore* in given text.",
-             category: "user",
+             desc: "Searches IP.",
+             category: "info",
              filename: __filename
          },
          async(Void, citel, text) => {
@@ -235,9 +235,9 @@ await citel.reply (txt);
 /*
 
 cmd({
-             pattern: "exec",
+             pattern: "$",
              desc: "Evaluates quoted code with given language.",
-             category: "misc",
+             category: "advanced",
              filename: __filename
          },
          async(Void, citel, text) => {
@@ -285,7 +285,7 @@ cmd({
              pattern: "readmore",
              alias:["rmore",'readmor'],
              desc: "Adds *readmore* in given text.",
-             category: "misc",
+             category: "tools",
              filename: __filename
          },
          async(Void, citel, text) => {
@@ -369,9 +369,9 @@ const vcard = 'BEGIN:VCARD\n' +
 
 
  cmd({
-             pattern: "calc",
+             pattern: "calculate",
              desc: "Calculate two value.",
-             category: "misc",
+             category: "info",
              filename: __filename
          },
          async(Void, citel, text) => {
@@ -479,7 +479,7 @@ return citel.reply(`Give me Query Like :  ${prefix}calc add;10;50 `);
              pattern: "uptime",
              alias: ["runtime"],
              desc: "Tells runtime/uptime of bot.",
-             category: "misc",
+             category: "info",
              filename: __filename
          },
          async(Void, citel, text) => {
@@ -491,7 +491,7 @@ return citel.reply(`Give me Query Like :  ${prefix}calc add;10;50 `);
  cmd({
              pattern: "wa",
              desc: "Makes wa me of quoted or mentioned user.",
-             category: "user",
+             category: "tools",
              filename: __filename
          },
          async(Void, citel, text) => {
@@ -505,7 +505,7 @@ return citel.reply(`Give me Query Like :  ${prefix}calc add;10;50 `);
  cmd({
              pattern: "mee",
              desc: "Makes wa me for user.",
-             category: "user",
+             category: "random",
              filename: __filename
          },
          async(Void, citel, text) => {  let user = citel.sender.split('@')[0]  ; return await citel.reply( `https://wa.me/${user}` ); })
@@ -536,7 +536,7 @@ return citel.reply(`Give me Query Like :  ${prefix}calc add;10;50 `);
  cmd({
              pattern: "nsfw",
              desc: "activates and deactivates nsfw.\nuse buttons to toggle.",
-             category: "misc",
+             category: "random",
              filename: __filename
          },
          async(Void, citel, text,{isCreator}) => {
@@ -558,9 +558,9 @@ return citel.reply(`Give me Query Like :  ${prefix}calc add;10;50 `);
      )
      //---------------------------------------------------------------------------
  cmd({
-             pattern: "npm",
+             pattern: "mp4dl",
              desc: "download mp4 from url.",
-             category: "search",
+             category: "internet",
              use: '<package name>',
              filename: __filename
          },
@@ -576,7 +576,7 @@ return citel.reply(`Give me Query Like :  ${prefix}calc add;10;50 `);
  cmd({
              pattern: "fliptext",
              desc: "Flips given text.",
-             category: "misc",
+             category: "random",
              use: '<query>',
              filename: __filename
          },
@@ -593,7 +593,7 @@ return citel.reply(`Give me Query Like :  ${prefix}calc add;10;50 `);
   
              alias:['mp4down','mp4fromurl'],
              desc: "download mp4 from url.",
-             category: "downloader",
+             category: "Downloader",
              use: '<url>',
              filename: __filename
          },
@@ -623,7 +623,7 @@ return citel.reply(`Give me Query Like :  ${prefix}calc add;10;50 `);
  cmd({
              pattern: "events",
              desc: "activates and deactivates events.\nuse buttons to toggle.",
-             category: "misc",
+             category: "random",
              filename: __filename
          },
          async(Void, citel, text,{isCreator}) => {
@@ -686,7 +686,7 @@ const buffer = await sticker.toBuffer();
              pattern: "chatbot",
              alias : ["chatbot"],
              desc: "activates and deactivates chatbot.\nuse buttons to toggle.",
-             category: "misc",
+             category: "tools",
              filename: __filename
          },
          async(Void, citel, text,{ isCreator }) => {
@@ -728,7 +728,7 @@ const buffer = await sticker.toBuffer();
  cmd({
              pattern: "ebinary",
              desc: "encode binary",
-             category: "misc",
+             category: "advanced",
              use: '<query>',
              filename: __filename
          },
@@ -748,7 +748,7 @@ const buffer = await sticker.toBuffer();
  cmd({
              pattern: "dbinary",
              desc: "decode binary",
-             category: "misc",
+             category: "advanced",
              use: '<query>',
              filename: __filename
          },
@@ -771,7 +771,7 @@ if(Config.WORKTYPE != 'private')
 cmd({
   pattern: "bot",
   desc: "activates and deactivates bot.\nuse buttons to toggle.",
-  category: "misc",
+  category: "random",
   filename: __filename
 },
 async(Void, citel, text,{isCreator}) => {
