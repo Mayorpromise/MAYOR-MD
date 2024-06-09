@@ -1,7 +1,7 @@
 {
-  "name": "BLADE-MD",
+  "name": "𝙼𝙰𝚈𝙾𝚁 𝙼𝙳",
   "version": "0.0.7",
-  "description": "Multi device whatsapp bot by Blade.",
+  "description": "Multi device whatsapp bot by 𝙼𝙰𝚈𝙾𝚁 𝙼𝙳",
   "main": "lib/client.js",
   "type": "commonjs",
   "license": "GPL-3.0",
@@ -9,7 +9,7 @@
     "start": "pm2 start lib/client.js --deep-monitoring --attach --name BLADE",
     "stop": "pm2 stop blade"
   },
-  "author": "Alextv",
+  "author": "𝙼𝙰𝚈𝙾𝚁 𝙼𝙳",
   "dependencies": {
     "@adiwajshing/keyed-db": "^0.2.4",
     "@hapi/boom": "^9.1.4",
