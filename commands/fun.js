@@ -62,7 +62,7 @@ cmd({
     cmd({
         pattern: "quotes",
         desc: "Sends quotes in chat.",
-        category: "games",
+        category: "info",
         filename: __filename,
     },
     async(Void, citel, text) => {
@@ -81,7 +81,7 @@ return citel.reply(replyf)
     cmd({
         pattern: "dictionary",
         desc: " dictionary.",
-        category: "tools",
+        category: "info",
         filename: __filename,
     },
     async(Void, citel, text) => {
