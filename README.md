@@ -3,9 +3,7 @@
 <br>
 
 
-![Typing SVG](https://readme-typing-svg.demolab.com?font=Ribeye&size=50&pause=1000&color=ff0000&center=true&width=900&height=100&lines=Its%20XLICON-V2-MD;%20Multi-Device%20WhatsApp%20Bot;%20Developed%20By%20SALMAN%20AHMAD)
-<p align="center">
-  
+
 >ＭＡＹＯＲ－ＭＤ is based on :
 >- [BLADE MD](https://github.com/Bladeh4x/BLADE-MD) by [BLADE](https://github.com/Bladeh4x) (License: Apache License 2.0)
 >
