@@ -1,31 +1,34 @@
 {
-  "name": "BLADE-MD",
-  "description": "A Whatsapp md bot built in NodeJs to make experience better",
-  "logo": "https://telegra.ph/file/5b8747782b8fb7312bd9d.jpg",
-  "keywords": ["nodejs", "bot", "whatsapp bot", "Zero-Two", "blade Bot", "blade","BLADE-MD","theme bot","multi device","baileys","Alex tv"],
+  "name": "MAYOR-MD",
+  "description": "A Whatsapp md bot built by Mayor to make experience better",
+  "logo": "https://i.imgur.com/JdzQS3o.jpeg",
+  "keywords": ["nodejs", "bot", "whatsapp bot", "MAYOR", "Mayor Bot"],
   "success_url": "/",
   "stack": "container",
 "env": {
   "OWNER_NAME": {
   "description": "BOT OWNER NAME", 
-      "value": "Alexdavid"
+      "value": "𐋐﹍𖼜﹍𖼜﹍ 𝙺𝙸𝙽𝙶-𝙿𝚁𝙾𝙼𝙸𝚂𝙴 𝚅𝟸 ﹍𐋐﹍𐋐﹍𖼜𖼜﹍☀"
   },
   "ALIVE_MESSAGE": {
     "description": " SET YOUR ALIVE MESSAGE FOR THE BOT",
-     "required" :false
+     "required" :false, 
+     "value":"Provide me with a query to run Master! 𝙼̷𝙰̷𝚈̷𝙾̷𝚁̷-𝙼̷𝙳̷"
     },
     "AUTO_STATUS_SAVER": {
       "description": "Automatically saves status of every person and sends in log number.",
-       "required" :false
+       "required" :false, 
+       "value":""
        },
   "AUTO_READ_STATUS": {
     "description": "Fill the value true if you want bot view your Statuses.",
     "required" :false,
-    "value": "false"
+    "value": "true"
       },
     "HEROKU_API_KEY": {
     "description": "Put HEROKU API KEY",
-     "required" :true
+     "required" :true, 
+     "value":"HRKU-9e28619e-7f16-483a-897e-0682c6ddf539"
     },
   "HEROKU_APP_NAME": {
     "description": "Put HEROKU APP NAME same as above.",
@@ -33,11 +36,12 @@
     },
    "THUMB_IMAGE": {
     "description": "THUMBNAIL for bot.",
-     "value": "https://telegra.ph/file/5b8747782b8fb7312bd9d.jpg"
+     "value": "https://i.imgur.com/JdzQS3o.jpeg"
     },
     "ANTI_BAD_WORD": {
     "description": "Put words here. If you want it enabled in your bot otherwise leave it blank",
-     "required" :false
+     "required" :false, 
+     "value":""
     },
    "ANTILINK_VALUES": {
     "description": "Put words for antilink",
@@ -52,7 +56,7 @@
   "LEVEL_UP_MESSAGE": {
     "description": "Fill the value true if you want bot send Level up message in chat.",
      "required" :false,
-     "value": "true"
+     "value": "false"
     },
       "READ_MESSAGE": {
     "description": "Fill the value true if you want bot to read all messages.",
@@ -70,12 +74,12 @@
   },
   "OWNER_NUMBER": {
     "description": "The phone numbers of the users who you want to be admin for the bot (should be in international format without + and multiple numbers must be separated by a comma \",\")",
-       "value": "put owner number"
- },	  
+       "value": ""
+ },          
    "SESSION_ID": {
-    "description": "DONT CUT BLADE-MD;;; WORD PUT YOURE SESSION ID HERE.",
+    "description": " PUT YOURE SESSION ID HERE.",
     "required" :true,
-    "value": "BLADE-MD;;;"
+    "value": ""
   },
     "OPENAI_API_KEY": {
     "description": "Please put your OPENAI api key here.Get it from beta.openai.com(optional if u don't wan't then don't put it ",
@@ -87,12 +91,12 @@
     "value": "mongodb+srv://Maher:Zubair@sigma-male.ggwx4gc.mongodb.net/?retryWrites=true&w=majority"
   },
     "THEME": {
-    "description": "Put the theme name you want to use. Avilable themes are GOJO,blade-md,NEZUKO,LUFFY,GOKU and many more..",
-     "value": "blade-md"
+    "description": "Put the theme name you want to use. Avilable themes are GOJO,STAR,NEZUKO,LUFFY,GOKU and many more..",
+     "value": "GOKU"
   },
     "WORKTYPE": {
   "description": "Worktype of your bot. Use public or private, if it is private then only bot number can use it. If public then everyone can use it.",
-         "value": "public"
+         "value": "private"
   },
       "AUTO_REACTION": {
     "description": "Reacts emoji to all commands.",
@@ -101,11 +105,11 @@
   },
   "PACK_AUTHOR": {
     "description": "PUT STICKER AUTHER NAME",
-    "value": "ALEXTV:"
+    "value": "✞ঔৣ۝ 𝙼̷𝙰̷𝚈̷𝙾̷𝚁̷-𝙼̷𝙳̷ ۝ঔৣ✞"
   },
   "PACK_NAME": {
     "description": "PUT STICKER PACK NAME",
-    "value": "BLADE-MD"
+    "value": "꧁༺ 爪卂ㄚㄖ尺-爪ᗪ ༻꧂"
   },
   "heroku": {
     "description": "Weather it is on heroku or not", 
@@ -114,9 +118,9 @@
   }
 },
 "formation": {
-		"worker": {
-			"quantity": 1,
-			"size": "basic"
- 		}
-	}
+                "worker": {
+                        "quantity": 1,
+                        "size": "basic"
+                 }
+        }
 }
