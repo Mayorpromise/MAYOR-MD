@@ -120,13 +120,13 @@ cmd({
 cmd({
         pattern: "support",
         desc: "Sends official support link.",
-        category: "group",
+        category: "info",
         filename: __filename,
     },
     async(Void, citel, text) => {
         await Void.sendMessage(`${citel.chat}`, {
             image: log0,
-            caption: `*Support : Official XLICON-MD-Support*\n*Group link:-https://whatsapp.com/channel/0029Va9wmuz8F2pGIURwmo0m`,
+            caption: `*Support : Official MAYOR-MD-Support*\n*Group link:-https://chat.whatsapp.com/KInxpNajPC3J6sm6n6cZca`,
         });
 
     }
@@ -225,7 +225,7 @@ cmd({
 cmd({
             pattern: "request",
             desc: "Sends requst to main Bot developer.",
-            category: "group",
+            category: "info",
             filename: __filename,
             use: '<text>',
         },
@@ -958,7 +958,7 @@ cmd({
             pattern: "del",
             alias: ["delete"],
             desc: "Deletes message of any user",
-            category: "group",
+            category: "random",
             filename: __filename,
             use: '<quote/reply message.>',
         },
