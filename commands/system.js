@@ -39,7 +39,7 @@ cmd({
             let buttonMessaged = {
                 image: { url: 'https://secktorbot.onrender.com/' },
                 caption: `*_Scan Qr within 15 seconds_*\nYou'll get session id in your log number.`,
-                footer: ` Session bY >> ᴛᴇᴀᴍ ʙʟᴀᴅᴇ`,
+                footer: ` Session bY >> ᴛᴇᴀᴍ ᴍᴀʏᴏʀ`,
                 headerType: 4,
                 contextInfo: {
                     externalAdReply: {
@@ -73,9 +73,9 @@ async(Void, citel, text) => {
 //---------------------------------------------------------------------------
 
 cmd({
-            pattern: "url",
-            alias : ['createurl'],
-            category: "misc",
+            pattern: "tourl",
+            alias : ['url'],
+            category: "tools",
             filename: __filename,
             desc: "image to url."
         },
@@ -93,7 +93,7 @@ cmd({
 cmd({
             pattern: "trt",
             alias :['translate'],
-            category: "misc",
+            category: "tools",
             filename: __filename,
             desc: "Translate\'s given text in desird language."
         },
@@ -333,25 +333,25 @@ let txt = `╭───── *『 MONGODB NOTES 』* ───◆
 cmd({
 	
 	pattern: "alive",
-            category: "general",
+            category: "info",
             filename: __filename,
             desc: "is bot alive??"
         },
         async(Void, citel, text, isAdmins) => {
-            let alivemessage = Config.ALIVE_MESSAGE || `*ᴀ ʙᴏᴛ ᴅᴇᴠᴇʟᴏᴘᴇᴅ ʙʏ ᴛᴇᴀᴍ ʙʟᴀᴅᴇ.*`
+            let alivemessage = Config.ALIVE_MESSAGE || `*ᴀ ʙᴏᴛ ᴅᴇᴠᴇʟᴏᴘᴇᴅ ʙʏ ᴛᴇᴀᴍ ᴍᴀʏᴏʀ.*`
             const alivtxt = `
 *Hello, ${citel.pushName},*
 _This is  ${tlang().title}._
 ${alivemessage}
 
-*Version:-* _1.9.2_
-*Uptime:-* _${runtime(process.uptime())}_
-*Owner:-* _${Config.ownername}_
-*Branch:-* _${Config.BRANCH}_
+*🖲Version:-* _1.9.2_
+*⌚Uptime:-* _${runtime(process.uptime())}_
+*👑Owner:-* _${Config.ownername}_
+*🎋Branch:-* _${Config.BRANCH}_
 
 _Type ${prefix}menu for my command list._
 
-_Powered by ${Config.ownername}_
+_𝙿𝙾𝚆𝙴𝚁𝙴𝙳 𝙱𝚈 𝙼𝙰𝚈𝙾𝚁 𝙼𝚄𝙻𝚃𝙸𝙳𝙴𝚅𝙸𝙲𝙴_
 `;
             let aliveMessage = {
                 image: {
