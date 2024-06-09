@@ -5,7 +5,7 @@
 
 
 >ＭＡＹＯＲ- ＭＤ is based on :
->- [BLADE MD](https://github.com/Bladeh4x/BLADE-MD) by [BLADE](https://github.com/Bladeh4x) (License: GPL3)
+>- [BLADE MD](https://github.com/Bladeh4x/BLADE-MD) by [BLADE](https://github.com/Bladeh4x) (License: GPL-3.0)
 >
 > :octocat: Don't forget to check out! :point_right: [BLADE MD](https://github.com/Bladeh4x/BLADE-MD)
 </p>
