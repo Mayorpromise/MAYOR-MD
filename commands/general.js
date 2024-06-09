@@ -19,8 +19,8 @@ const PastebinAPI = require("pastebin-js");
 pastebin = new PastebinAPI("EMWTMkQAVfJa9kM-MRUrxd5Oku1U7pgL");
 cmd({
         pattern: "pastebin",
-        desc: "To check ping",
-        category: "extra",
+        desc: "To check note",
+        category: "tools",
         filename: __filename,
     },
     async(Void, citel) => {
@@ -34,10 +34,10 @@ cmd({
 //---------------------------------------------------------------------------
 cmd({
     pattern: "chat",
-    alias :['gpt'],
+    alias :['hu'],
     desc: "chat with an AI(GPT)",
     category: "AI",
-    use: '<Hii,blade>',
+    use: '<Hii,Xcelsama>',
     filename: __filename,
 },
 async(Void, citel,text) => {
