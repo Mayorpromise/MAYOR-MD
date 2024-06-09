@@ -18,7 +18,7 @@ const fetch = require('node-fetch')
     //---------------------------------------------------------------------------
 cmd({
             pattern: "imdb",
-            category: "search",
+            category: "internet",
             desc: "Sends image of asked Movie/Series.",
             use: '<text>',
             filename: __filename,
@@ -60,7 +60,7 @@ cmd({
     //---------------------------------------------------------------------------
 cmd({
             pattern: "weather",
-            category: "search",
+            category: "info",
             desc: "Sends weather info about asked place.",
             use: '<location>',
             filename: __filename,
@@ -72,16 +72,16 @@ cmd({
             );
             let textw = "";
             textw += `*🌟Weather of  ${text}*\n\n`;
-            textw += `*Weather:-* ${wdata.data.weather[0].main}\n`;
-            textw += `*Description:-* ${wdata.data.weather[0].description}\n`;
-            textw += `*Avg Temp:-* ${wdata.data.main.temp}\n`;
-            textw += `*Feels Like:-* ${wdata.data.main.feels_like}\n`;
-            textw += `*Pressure:-* ${wdata.data.main.pressure}\n`;
-            textw += `*Humidity:-* ${wdata.data.main.humidity}\n`;
-            textw += `*Humidity:-* ${wdata.data.wind.speed}\n`;
-            textw += `*Latitude:-* ${wdata.data.coord.lat}\n`;
-            textw += `*Longitude:-* ${wdata.data.coord.lon}\n`;
-            textw += `*Country:-* ${wdata.data.sys.country}\n`;
+            textw += `*🌧Weather:-* ${wdata.data.weather[0].main}\n`;
+            textw += `*⛈️Description:-* ${wdata.data.weather[0].description}\n`;
+            textw += `*❄Avg Temp:-* ${wdata.data.main.temp}\n`;
+            textw += `*🌥Feels Like:-* ${wdata.data.main.feels_like}\n`;
+            textw += `*❄Pressure:-* ${wdata.data.main.pressure}\n`;
+            textw += `*🌈Humidity:-* ${wdata.data.main.humidity}\n`;
+            textw += `*☄️Humidity:-* ${wdata.data.wind.speed}\n`;
+            textw += `*☃️Latitude:-* ${wdata.data.coord.lat}\n`;
+            textw += `*⛄Longitude:-* ${wdata.data.coord.lon}\n`;
+            textw += `*🌍Country:-* ${wdata.data.sys.country}\n`;
 
 
             return await citel.reply(textw)
@@ -89,8 +89,8 @@ cmd({
     )
     //---------------------------------------------------------------------------
 cmd({
-            pattern: "horo",
-            category: "search",
+            pattern: "horoscope",
+            category: "info",
             desc: "Gives horoscope info of user.",
             use: '<sign>\n:Example: horo libra',
             filename: __filename,
@@ -108,9 +108,9 @@ cmd({
                         console.log(date);
                         let textw = "";
                         textw += `*🌟 Horoscope of  ${text}*\n\n`;
-                        textw += `*Current Date:* ${json.current_date}.\n`;
-                        textw += `*Sign:* ${text}.\n`;
-                        textw += `*Lucky Time:* ${json.lucky_time}.\n`;
+                        textw += `*🌈Current Date:* ${json.current_date}.\n`;
+                        textw += `*☄️Sign:* ${text}.\n`;
+                        textw += `*❄Lucky Time:* ${json.lucky_time}.\n`;
                         textw += `*Compatibility:* ${json.compatibility}.\n`;
                         textw += `*Lucky Number:* ${json.lucky_number}.\n`;
                         textw += `*Lucky Color:* ${json.color}.\n`;
@@ -128,7 +128,7 @@ cmd({
     cmd({
         pattern: "google",
         alias :['search','gsearch'],
-        category: "search",
+        category: "internet",
         desc: "Sends info of given query from Google Search.",
         use: '<text>',
         filename: __filename,
@@ -151,7 +151,7 @@ cmd({
     //---------------------------------------------------------------------------
 cmd({
             pattern: "image",
-            category: "search",
+            category: "internet",
             desc: "Searches Image on Google",
             use: '<text>',
             filename: __filename,
@@ -174,7 +174,7 @@ cmd({
     //---------------------------------------------------------------------------
 cmd({
             pattern: "couplepp",
-            category: "search",
+            category: "random",
             desc: "Sends two couples pics.",
             filename: __filename,
         },
@@ -188,9 +188,9 @@ cmd({
     //---------------------------------------------------------------------------
 cmd({
         pattern: "iswa",
-        category: "search",
+        category: "tools",
         desc: "Searches in given rage about given number.",
-        use: '9112345678xx',
+        use: '23470450352xx',
         filename: __filename,
     },
     async(Void, citel, text) => {
