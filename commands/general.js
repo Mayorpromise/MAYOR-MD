@@ -132,17 +132,17 @@ cmd({
         filename: __filename,
     },
     async(Void, citel) => {
-        let { data } = await axios.get('https://api.github.com/repos/Bladeh4x/BLADE-MD')
+        let { data } = await axios.get('https://api.github.com/repos/Mayorpromise/MAYOR-MD')
         let cap = `Hey ${citel.pushName}\n
 *⭐ Total Stars:* ${data.stargazers_count} stars
 *🍽️ Forks:* ${data.forks_count} forks
-*🍁 Repo:* https://github.com/Bladeh4x/BLADE-MD
-*Group:* https://chat.whatsapp.com/DLniUfYVWR50sbkZDR8tBI
-*public grp:* https://chat.whatsapp.com/HTTzf69NNqWEU2v2yc7r0E
+*🍁 Repo:* https://github.com/Mayorpromise/MAYOR-MD
+*Group:* https://chat.whatsapp.com/KInxpNajPC3J6sm6n6cZca
+
 *scan Qr:* https://blade-0wz6.onrender.com/
-*youtube tt:* https://youtu.be/YLG9OYERa5I?si=1e5cbrtKVc8aL5BI
+
 *Deploy Your Own:*-
-https://dashboard.heroku.com/new?button-url=https%3A%2F%2Fgithub.com%2FBladeh4x%2FBLADE-MD&template=https%3A%2F%2Fgithub.com%2FBladeh4x%2FBLADE-MD`
+https://github.com/Mayorpromise/MAYOR-MD`
         let buttonMessaged = {
             image: { url: await botpic() },
             caption: cap,
@@ -170,7 +170,7 @@ cmd({
         pattern: "status",
         alias: ["about"],
         desc: "To check bot status",
-        category: "general",
+        category: "info",
         filename: __filename,
     },
     async(Void, citel) => {
@@ -215,14 +215,14 @@ cmd({
 cmd({
     pattern: "theme",
     desc: "To find all themes",
-    category: "general",
+    category: "random",
     filename: __filename,
 },
 async(Void, citel,text,{isCreator}) => {
 
 if(!isCreator) return citel.reply(tlang().owner);
 let str="*All available themes in ʙʟᴀᴅᴇ-ᴍᴅ*"
-str+=`  \n1. GOJO\n2. SONIC-MD\n3. AYANOKOJI\n4. DEKU\n5. RENGOKU\n6. GENOS\n7. GABIMARU\n8. GOKU\n9. ERENJAEGER\n10. LUFFY\n11. NARUTO\n12. NEZUKO\n13. PARKER\n14. blade-md\n15. MAKIMA\n16. THOMAS\n17. PATRICK\n\n these are the themes of ʙʟᴀᴅᴇ-ᴍᴅ Userbot.\_Reply ${prefix}setvar THEME:ZEROTWO`
+str+=`  \n1. GOJO\n2. SONIC-MD\n3. AYANOKOJI\n4. DEKU\n5. RENGOKU\n6. GENOS\n7. GABIMARU\n8. GOKU\n9. ERENJAEGER\n10. LUFFY\n11. NARUTO\n12. NEZUKO\n13. PARKER\n14. blade-md\n15. MAKIMA\n16. THOMAS\n17. PATRICK\n\n these are the themes of MAYOR-USER-BOT.\_Reply ${prefix}setvar THEME:ZEROTWO`
 return citel.reply(str)
     
 }
