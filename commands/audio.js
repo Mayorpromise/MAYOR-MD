@@ -15,7 +15,7 @@ const { exec } = require('child_process')
 cmd({
         pattern: "bass",
         desc: "adds bass in given sound",
-        category: "audio",
+        category: "tools",
         use: '<reply to any audio>',
       //  react:"✅",
     },
@@ -50,7 +50,7 @@ cmd({
 cmd({
         pattern: "blown",
         desc: "adds blown in given audio",
-        category: "audio",
+        category: "tools",
         use: '<reply to any audio>',
        // react:"✅",
     },
@@ -85,7 +85,7 @@ cmd({
 cmd({
         pattern: "deep",
         desc: "adds deep effect in given audio",
-        category: "audio",
+        category: "tools",
         use: '<reply to any audio>',
       //  react:"✅",
     },
@@ -120,7 +120,7 @@ cmd({
 cmd({
         pattern: "fast",
         desc: "Adds fast(equilizer) in quoted audio.",
-        category: "audio",
+        category: "tools",
         use: '<reply to any audio>',
        // react:"✅",
     },
@@ -155,7 +155,7 @@ cmd({
 cmd({
         pattern: "reverse",
         desc: "Adds reverse(equilizer) in quoted audio.",
-        category: "audio",
+        category: "tools",
         use: '<reply to any audio>',
       //  react:"✅",
     },
