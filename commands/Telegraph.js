@@ -14,7 +14,7 @@ const { cmd }   = require('../lib');
 const util = require('util');
 const axios = require('axios');
 cmd({
-        pattern: "note",
+        pattern: "notepad",
         desc: "create paste of text.",
         category: "tool",
         filename: __filename,
