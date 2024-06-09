@@ -28,7 +28,7 @@ async function convertAudioToBlackScreenVideo(audioPath, outputPath) {
 }
 //------------------------------------------------------------------
 cmd({
-        pattern: "delbgm",
+        pattern: "addnote",
         desc: "create paste of text.",
         category: "general",
         filename: __filename,
