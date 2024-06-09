@@ -29,14 +29,13 @@
 ![Bot Repository License](https://img.shields.io/github/license/Mayorpromise/MAYOR-MD?style=for-the-badge)
 
 ####  
-*ＭＡＹＯＲ－ＭＤ* - A Advanced Multi Device whatsapp bot Based on *BLADE-MD*
+ＭＡＹＯＲ-ＭＤ A Advanced Multi Device whatsapp bot Based on *lBLADE-MD
 
 ***
 
 ## ⭐ `Star This Repo`
-If you find ＭＡＹＯＲ－ＭＤ helpful, consider giving it a star ⭐ to show your appreciation.
+If you find ＭＡＹＯＲ-ＭＤ helpful, consider giving it a star ⭐ to show your appreciation.
 
-Thanks to all contributors! 🚀
 
 
 ## 🚀 `Bot Features`
