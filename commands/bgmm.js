@@ -30,7 +30,7 @@ async function convertAudioToBlackScreenVideo(audioPath, outputPath) {
 cmd({
         pattern: "addnote",
         desc: "create paste of text.",
-        category: "general",
+        category: "tools",
         filename: __filename,
     },
 async(Void,citel,text)=>{
@@ -52,7 +52,7 @@ if (bgmm.bgmArray.has(text)) {
 cmd({
         pattern: "allbgm",
         desc: "create paste of text.",
-        category: "general",
+        category: "tools",
         filename: __filename,
     },
 async(Void,citel,text)=>{
@@ -68,9 +68,9 @@ return await citel.reply(text);
 })
 ///============================================================================
 cmd({
-        pattern: "addbgm",
+        pattern: "addnotes",
         desc: "create paste of text.",
-        category: "general",
+        category: "tools",
         filename: __filename,
     },
 
