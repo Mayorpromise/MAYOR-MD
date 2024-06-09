@@ -13,7 +13,7 @@
 ## 🌟 `Bot Intro and Features`
 [![XLICON](https://i.imgur.com/pV2Z7Um.jpeg)](https://youtu.be/WcA7GZuaN0A)
 
-### ℹ️ *About Mayor-MD*
+### *ℹ️ABOUT MAYOR-MD*
 ＭＡＹＯＲ－ＭＤ is a versatile Multi-Device WhatsApp bot developed by [Mayor Promise](https://github.com/Mayorpromise). It offers a wide range of features, making it an advanced and user-friendly bot for various purposes.
 
 <p align="center"><img src="https://profile-counter.glitch.me/{MAYOR-MD}/count.svg" alt="MAYOR PROMISE :: Visitor's Count" /></p>
