@@ -157,7 +157,7 @@ NOW Deploy👇
 
 
 ## `OWNER` 
-<a href="https://github.com/Mayorpromise/MAYOR-MD"><img src="https://github.com/salmanytofficial.png" width="250" height="250" alt="Salman Ahmad"/></a>
+<a href="https://github.com/Mayorpromise/MAYOR-MD"><img src="https://github.com/Mayorpromise.png" width="250" height="250" alt="Mayor Promise"/></a>
  
 ## 🌈 `Support Us`
 - **Mail Us:** [mayorpromise66@gmail.com](mailto:mayorpromise66@gmail.com)
