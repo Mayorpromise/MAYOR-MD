@@ -24,7 +24,7 @@ var dlsize = 100 // 100mb
 cmd({
             pattern: "tgs",
             desc: "Downloads telegram stickers.",
-            category: "downloader",
+            category: sticker",
             filename: __filename,
             use: '<add sticker url.>'
         },
@@ -68,7 +68,7 @@ cmd({
 /*cmd({
             pattern: "fb",
             desc: "Downloads fb videos  .",
-            category: "downloader",
+            category: "Downloader",
             filename: __filename,
             use: '<add fb url.>'
         },
@@ -141,7 +141,7 @@ cmd({
             pattern: "tiktok",
 	    alias :  ['tt','ttdl'],
             desc: "Downloads Tiktok Videos Via Url.",
-            category: "downloader",
+            category: "Downloader",
             filename: __filename,
             use: '<add tiktok url.>'
         },
@@ -159,9 +159,9 @@ cmd({
 /*
 cmd({
             pattern: "tiktok",
-	          alias :  ['tt','ttdl'],
+	          alias :  ['tt1','ttdl1'],
             desc: "Downloads Tiktok Videos Via Url.",
-            category: "downloader",
+            category: "Downloader",
             react :'🥳',
             filename: __filename,
             use: '<add tiktok url.>'
@@ -197,7 +197,7 @@ cmd({
         pattern: "facebook",
 	    alias :  ['fb','fbdl'],
         desc: "Downloads fb videos.",
-        category: "downloader",
+        category: "Downloader",
         filename: __filename,
         use: '<add fb url.>'
 },
@@ -239,9 +239,9 @@ let vurl=info.video.url_video;
 //---------------------------------------------------------------------------
 
 cmd({
-            pattern: "apk",
-            desc: "Downloads apks  .",
-            category: "downloader",
+            pattern: "playstore",
+            desc: "Downloads apps.",
+            category: "Downloader",
             filename: __filename,
             use: '<add sticker url.>',
         },
@@ -263,10 +263,10 @@ cmd({
 	if(apkSize > 100) return citel.send(`❌ File size bigger than 150mb.`);
        const url = data.dllink;
 	 let  inf  ="*App Name :* " +data.name;
-         inf +="\n*App id        :* " +data.package;
-         inf +="\n*Last Up       :* " +data.lastup;
-         inf +="\n*App Size     :* " +data.size;
-        // inf +="\n*App Link     :* " +data.dllink;
+         inf +="\n*ℹ️App id        :* " +data.package;
+         inf +="\n*⌚Last Up       :* " +data.lastup;
+         inf +="\n*💽App Size     :* " +data.size;
+        // inf +="\n*⚙️App Link     :* " +data.dllink;
 	inf +="\n\n "+ Config.caption
          
 
@@ -332,8 +332,8 @@ let data = await download(searc[0].id);
   //---------------------------------------------------------------------------
 cmd({
             pattern: "gdrive",
-            desc: "Downloads telegram stickers.",
-            category: "downloader",
+            desc: "Downloads google drive files.",
+            category: "premium",
             filename: __filename,
             use: '<add sticker url.>'
         },
@@ -365,12 +365,12 @@ try {
 cmd({
             pattern: "gitclone",
             desc: "Downloads apks  .",
-            category: "downloader",
+            category: "premium",
             filename: __filename,
             use: '<add sticker url.>',
         },
         async(Void, citel, text) => {
-	if (!text) return await citel.send('*Provide Repo Url, Ex:- _.gitclone https://github.com/Bladeh4x/BLADE-MD_*') 
+	if (!text) return await citel.send('*Provide Repo Url, Ex:- _.gitclone https://github.com/Xcelsama/STAR-MD_*') 
     const regex = /(?:https|git)(?::\/\/|@)github\.com[\/:]([^\/:]+)\/(.+)/i
     if (!regex.test(text) ) return await citel.send('*Uhh Please, Provide Valid Repositry Url*');
     let [_, user, repo] = text.match(regex) || []
@@ -386,9 +386,9 @@ cmd({
 cmd({
             pattern: "tts",
             desc: "text to speech.",
-            category: "downloader",
+            category: "tools",
             filename: __filename,
-            use: '<Hii,this is Suhail>',
+            use: '<Hii,this is Mayor>',
         },
         async(Void, citel, text) => {
             if (!text && !citel.quoted) return citel.reply(`*Please give me Text*\n *_Example : .tts Hi,I am ProfileCorruptedError._*`);
@@ -407,7 +407,7 @@ cmd({
 cmd({
             pattern: "video",
             desc: "Downloads video from yt.",
-            category: "downloader",
+            category: "Downloader",
             filename: __filename,
             use: '<faded-Alan Walker>',
         },
@@ -480,7 +480,7 @@ cmd({
             pattern: "play",
             alias: ["music"],
             desc: "Sends info about the query(of youtube video/audio).",
-            category: "downloader",
+            category: "Downloader",
             filename: __filename,
             use: '<faded-Alan walker.>',
         },
@@ -536,9 +536,9 @@ async(Void, citel, text) => {
 
     //---------------------------------------------------------------------------
 cmd({
-            pattern: "sound",
-            desc: "Downloads ringtone.",
-            category: "downloader",
+            pattern: "dlringtone",
+            desc: "Downloads ringtone",
+            category: "premium",
             filename: __filename,
             use: '<Dowanload Tiktok Sounds>',
         },
@@ -562,7 +562,7 @@ cmd({
 cmd({
             pattern: "ringtone",
             desc: "Downloads ringtone.",
-            category: "downloader",
+            category: "Downloader",
             filename: __filename,
             use: '<ringtone name>',
         },
@@ -581,9 +581,9 @@ cmd({
 
     //---------------------------------------------------------------------------
 cmd({
-            pattern: "pint",
+            pattern: "pinterest",
             desc: "Downloads image from pinterest.",
-            category: "downloader",
+            category: "Downloader",
             filename: __filename,
             use: '<text|image name>',
         },
@@ -616,7 +616,7 @@ cmd({
             pattern: "mediafire",
             alias :['mf','mfire'],
             desc: "Downloads media from Mediafire.",
-            category: "downloader",
+            category: "premium",
             filename: __filename,
             use: '<url of mediafire>',
         },
@@ -660,7 +660,7 @@ cmd({
             pattern: "song",
             alias: ["audio"],
             desc: "Downloads audio from youtube.",
-            category: "downloader",
+            category: "Downloader",
             filename: __filename,
             use: '<give text>',
         },
@@ -720,7 +720,7 @@ cmd({
             pattern: "yts",
             alias: ["ytsearch","getyt"],
             desc: "Gives descriptive info of query from youtube..",
-            category: "downloader",
+            category: "Downloader",
             filename: __filename,
             use: '<yt search text>',
         },
@@ -752,7 +752,7 @@ cmd({
             pattern: "ytmp4",
             alias: ["ytv","ytvid" , "ytvideo"],
             desc: "Downloads video from youtube.",
-            category: "downloader",
+            category: "Downloader",
             filename: __filename,
             use: '<yt video url>',
         },
@@ -817,7 +817,7 @@ cmd({
         pattern: "ytmp3",
 	alias : ["yta"],
 	desc: "Downloads audio by yt link.",
-        category: "downloader",
+        category: "Downloader",
         use: '<yt video url>',
     },
     async(Void, citel, text) => {
@@ -887,7 +887,7 @@ cmd({
         pattern: "ytdoc",
             alias: ["ytd"],
         desc: "Downloads audio by yt link as document.",
-        category: "downloader",
+        category: "Downloader",
         use: '<ytdoc video url>',
     },
     async(Void, citel, text) => {
@@ -955,7 +955,7 @@ cmd({
 /*cmd({
     pattern: "song",
     desc: "Search Song From youtube",
-    category: "downloader",
+    category: "Downloader",
     filename: __filename,
     use: '<Add Yt Song Query>'
 },
