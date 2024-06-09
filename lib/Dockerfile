@@ -1,19 +1,7 @@
-  FROM node:lts-buster
-
-RUN apt-get update && \
-  apt-get install -y \
-  ffmpeg \
-  imagemagick \
-  webp && \
-  apt-get upgrade -y && \
-  rm -rf /var/lib/apt/lists/*
-
-COPY package.json .
-
-RUN npm install && npm install qrcode-terminal
-
-COPY . .
-
-EXPOSE 5000
-
+FROM quay.io/maherzubair/sigma-md:beta
+RUN git clone https://github.com/Xcelsama/MAYOR-MD /root/STAR-MD
+WORKDIR /root/MAYOR-MD/
+RUN npm install npm@latest
+RUN npm install
+EXPOSE 8000
 CMD ["npm", "start"]
