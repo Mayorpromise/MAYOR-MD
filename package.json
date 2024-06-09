@@ -1,13 +1,13 @@
 {
-  "name": "MAYOR MD",
+  "name": "mayor-md",
   "version": "0.0.7",
   "description": "Multi device whatsapp bot by MAYOR MD",
   "main": "lib/client.js",
   "type": "commonjs",
   "license": "GPL-3.0",
   "scripts": {
-    "start": "pm2 start lib/client.js --deep-monitoring --attach --name BLADE",
-    "stop": "pm2 stop blade"
+    "start": "pm2 start lib/client.js --deep-monitoring --attach --name mayor",
+    "stop": "pm2 stop mayor"
   },
   "author": "MAYOR MD",
   "dependencies": {
