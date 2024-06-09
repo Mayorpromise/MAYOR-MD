@@ -16,7 +16,7 @@ const axios = require('axios');
 cmd({
         pattern: "notepad",
         desc: "create paste of text.",
-        category: "tool",
+        category: "tools",
         filename: __filename,
     },
     async(Void, citel,text) => {
